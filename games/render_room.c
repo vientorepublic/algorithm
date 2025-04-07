@@ -37,7 +37,7 @@ void renderRoom(int playerPos) {
     for (int i = 0; i < ROOM_WIDTH + 2; i++) {
         printf("*");
     }
-    printf("\n");
+    printf("\n\n");
 }
 
 int main(int argc, char* argv[]) {
