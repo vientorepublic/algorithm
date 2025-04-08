@@ -10,32 +10,35 @@
 #endif
 
 #define ROOM_WIDTH 10
+#define BORDER_CHAR '*'
+#define PLAYER_CHAR 'P'
+#define EMPTY_CHAR '.'
 
 void renderRoom(int playerPos) {
     printf("\n");
     
     // Top border
     for (int i = 0; i < ROOM_WIDTH + 2; i++) {
-        printf("*");
+        printf("%c", BORDER_CHAR);
     }
     printf("\n");
     
     // Middle section
-    printf("*");
+    printf("%c", BORDER_CHAR);
     for (int i = 0; i < ROOM_WIDTH; i++) {
         if (i == playerPos) {
-            printf("P");
+            printf("%c", PLAYER_CHAR);
         } else if (i < playerPos) {
-            printf(".");
+            printf("%c", EMPTY_CHAR);
         } else {
             printf(" ");
         }
     }
-    printf("*\n");
+    printf("%c\n", BORDER_CHAR);
     
     // Bottom border
     for (int i = 0; i < ROOM_WIDTH + 2; i++) {
-        printf("*");
+        printf("%c", BORDER_CHAR);
     }
     printf("\n\n");
 }

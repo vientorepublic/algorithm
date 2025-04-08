@@ -11,27 +11,30 @@
 
 #define ROOM_WIDTH 10
 #define ROOM_HEIGHT 5
+#define BORDER_CHAR '*'
+#define PLAYER_CHAR 'P'
+#define EMPTY_CHAR '.'
 
 void renderRoom(int playerX, int playerY) {
     printf("\n");
     
     // Top border
     for (int i = 0; i < ROOM_WIDTH + 2; i++) {
-        printf("*");
+        printf("%c", BORDER_CHAR);
     }
     printf("\n");
     
     // Middle section
     for (int y = 0; y < ROOM_HEIGHT; y++) {
-        printf("*");
+        printf("%c", BORDER_CHAR);
         for (int x = 0; x < ROOM_WIDTH; x++) {
             if (x == playerX && y == playerY) {
-                printf("P");
+                printf("%c", PLAYER_CHAR);
             } else {
-                printf(".");
+                printf("%c", EMPTY_CHAR);
             }
         }
-        printf("*\n");
+        printf("%c\n", BORDER_CHAR);
     }
     
     // Bottom border
