@@ -9,11 +9,11 @@
   #define CLEAR_CONSOLE ""
 #endif
 
-#define ROOM_WIDTH 10
-#define ROOM_HEIGHT 5
+#define ROOM_WIDTH 20
+#define ROOM_HEIGHT 10
 #define BORDER_CHAR '*'
 #define PLAYER_CHAR 'P'
-#define EMPTY_CHAR '.'
+#define EMPTY_CHAR ' '
 
 void renderRoom(int playerX, int playerY) {
     printf("\n");
