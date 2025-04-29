@@ -10,7 +10,8 @@ int main() {
   for (int i = 1; i <= 5; i++) {
     printf("문자-정수-문자-정수 입력 >> ");
     scanf("%c%d%c%d", &char1, &num1, &char2, &num2);
-    printf("입력한 값은 [%c] [%d] [%c] [%d] 입니다.\n", char1, num1, char2, num2);
+    printf("입력한 값은 [%c] [%d] [%c] [%d] 입니다.\n", char1, num1, char2,
+           num2);
   }
 
   return 0;

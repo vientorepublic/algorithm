@@ -13,6 +13,6 @@ int main() {
 
   printf("%s\n", str);
   printf("%5s\n", str);
-  
+
   return 0;
 }
