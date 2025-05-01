@@ -3,6 +3,7 @@
 void intro();
 void println_stars();
 void get_int(int *num);
+int sum(int x, int y);
 
 void intro() { printf("=== 두 정수를 더하는 프로그램 ===\n"); }
 
@@ -13,6 +14,8 @@ void get_int(int *num) {
   scanf("%d", num);
 }
 
+int sum(int x, int y) { return x + y; }
+
 int main() {
   int a, b;
   intro();
@@ -20,6 +23,6 @@ int main() {
   get_int(&a);
   get_int(&b);
   println_stars();
-  printf("a + b = %d\n", a + b);
+  printf("a + b = %d\n", sum(a, b));
   return 0;
 }

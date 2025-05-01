@@ -7,7 +7,7 @@ int main() {
   char *str = NULL;
   // 문자열 메모리 동적 할당
   // char = 1byte, 1 * 100 = 100byte
-  str = (char *)malloc(100 * sizeof(char));
+  str = malloc(100 * sizeof(char));
   if (str == NULL) {
     fprintf(stderr, "Memory allocation failed\n");
     return 1;
@@ -22,7 +22,7 @@ int main() {
   int *pi = NULL;
   // 정수 메모리 동적 할당
   // int = 4byte, 4 * 10 = 40byte;
-  pi = (int *)malloc(10 * sizeof(int));
+  pi = malloc(10 * sizeof(int));
   if (pi == NULL) {
     fprintf(stderr, "Memory allocation failed\n");
     return 1;
