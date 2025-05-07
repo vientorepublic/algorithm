@@ -44,5 +44,13 @@ int main() {
 
   free(result);
 
+  // Null Pointer (Uninitialized Free)
+  // free((void*)0);
+  char* null_ptr = NULL;
+  // strcpy(null_ptr, "test");
+  printf("%s\n", null_ptr);
+  printf("%p\n", null_ptr);
+  free(null_ptr);
+
   return 0;
 }
