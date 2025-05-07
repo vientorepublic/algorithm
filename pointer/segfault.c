@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <string.h>
 
 // 이 코드는 메모리 오류(Segmentation Fault)를 발생시키는 여러 예시를
